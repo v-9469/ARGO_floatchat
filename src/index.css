@@ -1,0 +1,28 @@
+/* src/index.css */
+
+:root {
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  --background-color: #0d1117; /* Dark background */
+  --card-background: #161b22; /* Dark card background */
+  --text-primary: #c9d1d9; /* Light primary text */
+  --text-secondary: #8b949e; /* Light secondary text */
+  --border-color: #30363d; /* Dark border color */
+  --primary-blue: #58a6ff;
+  --primary-blue-dark: #388bfd;
+  --primary-red: #f85149;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--background-color);
+  color: var(--text-primary);
+}
+
+/* Required fix for react-leaflet map tiles */
+.leaflet-container {
+  height: 400px; /* Or any fixed height that works for your layout */
+  width: 100%;
+  border-radius: 0.5rem; /* Match card rounding */
+}

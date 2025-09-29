@@ -1,0 +1,33 @@
+/* src/App.module.css */
+
+.appContainer {
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.mainLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: calc(100vh - 4rem); /* Full height minus padding */
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 7; /* Takes 7/12 of the space */
+}
+
+.rightColumn {
+  flex: 5; /* Takes 5/12 of the space */
+  min-height: 400px;
+}
+
+/* On larger screens, switch to a row layout */
+@media (min-width: 1024px) {
+  .mainLayout {
+    flex-direction: row;
+  }
+}
