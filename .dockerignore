@@ -1,0 +1,26 @@
+# Files and directories to exclude from the Docker build context
+# This helps to keep the image small and speed up the build process
+
+# Dependencies are installed in the container
+node_modules
+
+# The production build is created in the container
+build
+dist
+
+# Docker-related files
+Dockerfile
+.dockerignore
+
+# Git and markdown files
+.git
+.gitignore
+*.md
+
+# Environment variables should not be included in the image
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
