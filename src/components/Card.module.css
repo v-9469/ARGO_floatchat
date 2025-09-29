@@ -1,0 +1,43 @@
+/* src/components/Card.module.css */
+
+.card {
+  background-color: var(--card-background);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeader {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardTitle {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.cardMenu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.cardMenu svg {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.cardMenu svg:hover {
+  color: var(--primary-blue);
+}
+
+.cardBody {
+  flex-grow: 1;
+  padding: 1rem;
+}
